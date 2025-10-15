@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TeacherOverviewController">
+    <children>
+        <TableView fx:id="teacherTable" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="50.0">
+            <columns>
+                <TableColumn fx:id="colName" text="ФИО" prefWidth="220" />
+                <TableColumn fx:id="colTitle" text="Звание" prefWidth="120" />
+                <TableColumn fx:id="colDegree" text="Степень" prefWidth="120" />
+                <TableColumn fx:id="colPosition" text="Должность" prefWidth="160" />
+            </columns>
+        </TableView>
+        <ToolBar AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <items>
+                <Button text="Добавить" onAction="#handleAdd" />
+                <Button text="Изменить" onAction="#handleEdit" />
+                <Button text="Удалить" onAction="#handleDelete" />
+            </items>
+        </ToolBar>
+    </children>
+</AnchorPane>
+
+
